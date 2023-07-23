@@ -1,0 +1,180 @@
+/* CSS Document */
+
+/* Author: Mariano Rico, Date : 13 November 2017 */
+
+
+
+
+/*
+   specify number of classes which produce a different border color 
+*/
+
+.blueborder		{ border:solid #00F  2px;}
+.redborder 		{ border:solid #F00  2px; }
+.greenborder	{ border:solid #0f0  2px; }
+.orangeborder   { border:solid #F90  2px; } 
+.blackborder    { border:solid #000  2px; }
+.yellowborder   { border:solid #E5D605  2px; }
+ 
+
+
+/*
+    style for the header element 
+*/
+
+header{ position:relative; display:block;  background-color:#fff;height:180px; top:0; left:0; margin:0; padding:0;}
+
+
+/*
+	style for the logo element within the header element
+*/
+header p.logo{
+
+	position:absolute;
+	background: url(../images/romeicon.jpeg) no-repeat center top;
+	background-size:auto;
+	display: inline-block; 
+	/*width:260px;*/ 
+	width:200px;
+	
+	
+	height:180px;
+	padding:0;
+	margin:0;
+	background-color:#fff;
+	
+
+	z-index:2;
+	top:0;
+	left:0;
+}
+
+
+/*
+	style for the section element within the header element
+*/
+
+header section    { position:absolute;
+					text-align:center; 
+					padding-left:200px; 
+				    width:80%; 
+					background-color:#F09;
+					height:180px;
+				    margin:0;
+					color:#FFF;
+}
+
+/* style for the section element with class of "first"  */
+section.first{ display:block; float:left; width:100%; color:#FFF; }
+
+/* style for the aside element within the section element with class of first */
+section.first aside{width:32%;float:left; height:200px; text-align:center;  position:relative;}
+
+
+/* style for  aside element with class of "StPeter" , inside section element with class of "first"  */
+section.first aside.StPeter{ background:url(../images/StPeter_Square-skw.jpg) repeat; }
+
+/* style for  aside element with class of "trevi" , inside section element with class of "first"  */
+section.first aside.trevi{ background:url(../images/TreviFountain-2.jpg) repeat; }
+
+/* style for  aside element with class of "sistene" , inside section element with class of "first"  */
+section.first aside.sistene{ background:url(../images/SistineChapel-skw.jpg) repeat; }
+
+
+
+/* style for section element with class of "second" */
+section.second{ display:block; float:left; width:100%; }
+
+/* style for all asides within secction element class of "second"  */
+section.second aside{width:48%; float:left; height:200px; text-align:center; position:relative; }
+
+/* style for the colosseam class */
+.colosseum{ background:url(../images/Colosseum-str.jpg) repeat;  }
+
+/* style for the spanish class (spanishsteps)*/
+.spanish{   background:url(../images/spanishsteps-str.jpg) repeat;  }
+
+/* style for tablet class, that is classes with tablet will not be displayed
+	however in media query below, this will be changed to display if screen a tablet size. 
+*/
+.tablet { display:none; }
+
+
+
+/* style for nav section */
+nav{ background-color: rgba(0,0,0,.8); position:absolute; top:0; left:0; padding:50px 0 0 0; width:100%; z-index:1;}
+nav ul { list-style:none; margin:0; padding:0;}
+
+nav ul li:hover{ background-color:#F00; }
+nav ul li:hover > ul{ display:block;}
+
+nav ul li a:hover { background-color:#0F0;}
+nav:after{ content:''; display:block; clear:both;}
+
+nav ul li a{ 
+	display:inline-block; 
+	color:#fff; 
+	padding:10px 20px; 
+	text-decoration:none; 
+	width:125px; 
+	position:relative;
+}
+
+nav ul ul { position:absolute; top:100%; background-color:#00F; display:none; }
+nav ul ul li { position:relative; }
+nav ul ul ul{left:100%; top:0px; background-color:#0ff;}
+
+/*top level*/
+nav > ul {padding-left:220px; } 
+nav > ul >li {float:left;}
+nav > ul >li > a { width:auto; padding:0px 20px 15px 20px; }
+
+
+
+/* style for the footer element */
+footer{ color:#fff; background :linear-gradient(to right, #F9C,orange,yellow,green,blue,indigo,violet);  /*rainbow*/ }
+
+@media screen and (max-width:600px)
+{
+
+	/* style for the aside elements within section element of class "first"*/
+    section.first aside{ display:block; float:none; width:100%; height:150px; }
+
+	/* style for the aside elements within section element of class "second"*/
+    section.second aside{ display:block; float:none; width:100%; height:150px; }
+
+	/* style for element with class of "tablet",  so these elements get displayed*/
+    .tablet{ display:block;margin-left:0; padding-left:20px; text-align:left;}
+	
+	/* if we get here(in a tablet size or smaller), dont display classes which are only for desktop */
+    .desktop { display:none; }
+	
+
+
+	/* Navigation */
+	/*
+	
+	nav{ position:static; width:auto;padding:20px 15px; background-color: #4b0a0c;}
+	
+	nav ul,
+	nav ul ul,
+	nav ul ul ul{display:block; position:static; }
+	
+	nav > ul { padding:0;}
+	nav > ul >li {float:none; position:static; }
+	
+	nav ul li a{
+		width:auto; 
+		display:block;
+		margin:8px 10px; 
+		padding:8px 15px;
+		border: 1px solid rgba{255,255,255,0.95};
+	}
+	nav ul li a:hover { background-color:rgba(0,255,0,.2); }
+	nav ul li:hover{ background-color:rgba(255,0,0,.2);  }
+	*/
+	
+	
+		
+	
+}

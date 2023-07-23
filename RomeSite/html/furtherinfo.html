@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+    	<!-- Author: Mariano Rico, Date : 13 November 2017 -->
+    
+		<meta charset="utf-8">
+		<title>Rome Tours - further info</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/romestyle.css">
+
+
+		<style>
+
+			form{ width:80%; margin-left:auto; margin-right:auto; }
+		
+			input,select,textarea{display:inline; margin-bottom:1em;}	
+
+			label{ display:block; }
+
+			form ul{ list-style-type:none; }
+   	
+			.chbox{display:inline-block;}
+ 
+			.rad{ display:inline;}
+
+		</style>
+
+
+	</head>
+
+<body>
+
+		   	<header class="blueborder">
+		                       
+                <p class="logo redborder">  </p> 
+				
+				
+				<section class="blackborder">
+                	<br/><br/><br/>			
+		            <h1 class="desktop">Rome Tours, Further Information</h1> 
+					<h3 class="tablet">Rome Tours</h3>
+					
+				</section>
+		        
+		   	</header>
+
+
+
+
+
+        <form style="background-color:#fff;">
+			<h3> Complete form below </h3>
+           
+		   <label for="fname">First Name </label>
+            <input type="text" id="fname" name="fname"/>
+            <label for="sname">surname </label>
+            <input type="text" id="sname" name="sname"/>
+            <label for="email">email </label>
+            <input type="email" id="email" name="email"/>
+            <label for="tel">telephone </label>
+            <input type="tel" id="tel" name="tel"/>
+            
+            <p>I would like more info : </p>
+            <ul>
+              <li><input type="checkbox" name="prices" id="prices" class="chbox"/>Prices</li>
+              <li><input type="checkbox" name="accom" id="accom" class="chbox"/>Accomadation</li>
+              <li><input type="checkbox" name="other" id="other" class="chbox"/>Other</li>          
+            </ul>
+            
+            <p>Preferred contact Method : </p>
+            <ul>
+              <li><input type="radio" name="contact"  id="contactemail"  class="rad"/>Email</li>
+              <li><input type="radio" name="contact"  id="contactmobile" class="rad"/>Mobile</li>
+
+            </ul>
+            
+ 
+ 
+            <label for="reference">Reference source</label>
+            <select name="reference" id="reference" >
+                <option value="ad">Advertisment </option>
+                <option value="fr">Friend </option>
+                <option value="go">Google</option>
+                <option value="so">SocialMedia</option>
+                <option value="ot">Other</option>
+        
+            </select>
+            
+            <label for="questions">Questions? </label>
+            <textarea id="questions" name="questions" rows="3" cols="25"></textarea>
+            
+            <input type="submit" id="submit" name="submit" class="btn">
+            <input type="reset"  id="reset"  name="reset"  class="btn">
+            
+	        <a href="#" title="Top"  > Top </a>
+                   
+        
+        </form>
+        
+        
+        <br><br>
+        <button onClick="history.back();">back </button> 
+
+        
+		   <nav> 
+           		<ul>
+    				<li><a title="Home" href="../index.html">Home</a></li>              
+                	
+					<li>
+                    	<a title="Special Places" href="#"> Special Places </a>
+                        <ul>
+                        	<li><a title="St Peter Square" 	href="StPeter.html"> St Peter Square </a></li>
+                        	<li><a title="Trevi Fountain" 	href="trevi.html"> Trevi Fountain </a></li>
+                        	<li><a title="Sistene Chapel" 	href="sistene.html"> Sistene Chapel </a></li>
+                        	<li><a title="Roman Colossuem" 	href="colosseum.html"> Roman Colosseum </a></li>
+                        	<li><a title="Spanish Steps" 	href="spanishsteps.html"> Spanish Steps </a></li>
+                            
+                             
+                        </ul>
+                    </li>
+                    <li><a title="Further Information" href="furtherinfo.html"> Further Information </a></li>                    
+                    <li><a title="Contact Us" href="contactus.html"> Contact Us </a></li> 
+               
+                
+                </ul>
+           </nav>     
+        
+        
+
+
+
+</body>
+</html>
