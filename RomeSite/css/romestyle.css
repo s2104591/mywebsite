@@ -72,13 +72,13 @@ section.first aside{width:32%;float:left; height:200px; text-align:center;  posi
 
 
 /* style for  aside element with class of "StPeter" , inside section element with class of "first"  */
-section.first aside.StPeter{ background:url(../images/StPeter_Square-skw.jpg) repeat; }
+section.first aside.StPeter{ background:url(../images/StPeter_Square-skw.JPG) repeat; }
 
 /* style for  aside element with class of "trevi" , inside section element with class of "first"  */
-section.first aside.trevi{ background:url(../images/TreviFountain-2.jpg) repeat; }
+section.first aside.trevi{ background:url(../images/TreviFountain-2.JPG) repeat; }
 
 /* style for  aside element with class of "sistene" , inside section element with class of "first"  */
-section.first aside.sistene{ background:url(../images/SistineChapel-skw.jpg) repeat; }
+section.first aside.sistene{ background:url(../images/SistineChapel-skw.JPG) repeat; }
 
 
 
@@ -89,10 +89,10 @@ section.second{ display:block; float:left; width:100%; }
 section.second aside{width:48%; float:left; height:200px; text-align:center; position:relative; }
 
 /* style for the colosseam class */
-.colosseum{ background:url(../images/Colosseum-str.jpg) repeat;  }
+.colosseum{ background:url(../images/Colosseum-str.JPG) repeat;  }
 
 /* style for the spanish class (spanishsteps)*/
-.spanish{   background:url(../images/spanishsteps-str.jpg) repeat;  }
+.spanish{   background:url(../images/spanishsteps-str.JPG) repeat;  }
 
 /* style for tablet class, that is classes with tablet will not be displayed
 	however in media query below, this will be changed to display if screen a tablet size. 
