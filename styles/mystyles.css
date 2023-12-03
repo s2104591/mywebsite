@@ -6,6 +6,13 @@
 
 */
 
+       .smallfont{
+            font-size: 0.7em;
+       }
+
+       .bluefont{
+            color:blue;
+       }
 
        body {
            margin: 15px 10px 10px 80px;        
